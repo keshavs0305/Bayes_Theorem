@@ -8,6 +8,8 @@ d = input("Dish type: ")
 given_ingredients = input("provide ingredients: ").split(" ")
 
 
+recipe_data = pickle.load(open("recipe1m_small.pkl",'rb'))
+
 R = []
 ingredients = []
 for recipe in recipe_data:
